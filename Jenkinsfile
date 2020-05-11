@@ -6,7 +6,7 @@ pipeline {
    stages {
       stage("Git Checkout") {
          steps {
-          git 'https://github.com/tusharheda08/onewebapp.git/'
+          git 'https://github.com/sunilkhadanga/onewebapp.git/'
            // git 'https://github.com/tusharheda08/onewebapp'
             
          }
