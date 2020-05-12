@@ -6,7 +6,7 @@ pipeline {
    stages {
       stage("Git Checkout") {
          steps {
-          git 'https://github.com/tusharheda08/onewebapp.git/'
+          git 'https://github.com/sunilkhadanga/onewebapp.git/'
            // git 'https://github.com/tusharheda08/onewebapp'
             
          }
@@ -24,9 +24,8 @@ pipeline {
       
       stage ("Email Notification") {
        steps {
-           mail bcc: '', body: '''hello Welcome to Jenkins job email notification
-          Thanks,
-          Tushar''', cc: '', from: '', replyTo: '', subject: 'Jenkins job email notification', to: 'tusharheda08@gmail.com'
+                
+          mail bcc: '', body: 'Hello mail service on..', cc: '', from: '', replyTo: '', subject: 'Test', to: 'khadanga.sunil@gmail.com'
         }
       }  
        
